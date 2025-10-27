@@ -40,26 +40,24 @@
       color: #333;
       text-align: center;
     }
-    .boton-salir {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
+    .mensaje-salida {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      max-width: 300px;
     }
   </style>
 </head>
 <body>
   <!-- Logo clicable -->
-  <a href="https://forms.gle/D5TrEhg7tCu1FBoB9">
+  <a href="https://forms.gle/D5TrEhg7tCu1FBoB9" target="_blank" rel="noopener noreferrer">
     <img src="LOGOTYM.jpg" alt="Logo Trans&Maq" />
   </a>
-  <p>Haz clic en el logo para iniciar la inspección de <strong>Trans&Maq</strong></p>
-
-  <!-- Botón de salir -->
-  <a href="https://www.google.com" class="boton-salir">Salir</a>
+  <p>Haz clic en el logo para iniciar la inspección preoperacional</p>
+  <div class="mensaje-salida">
+    Para salir de la app, desliza hacia arriba y ciérrala desde el selector de aplicaciones.
+  </div>
 
   <!-- Registro del Service Worker -->
   <script>
@@ -71,6 +69,7 @@
   </script>
 </body>
 </html>
+
 
 
 
