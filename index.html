@@ -18,6 +18,7 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -27,21 +28,28 @@
     }
     img {
       max-width: 200px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <!-- Logo de la empresa -->
-  <img src="LOGOTYM.jpg" alt="Logo TYM" />
-
-  <script>
-    // Redirige automáticamente al formulario
-    setTimeout(() => {
-      window.location.href = "https://forms.gle/D5TrEhg7tCu1FBoB9";
-    }, 1500);
-  </script>
+  <!-- Logo clicable -->
+  <a href="https://forms.gle/D5TrEhg7tCu1FBoB9">
+    <img src="LOGOTYM.jpg" alt="Logo TYM" />
+  </a>
+  <p>Haz clic en el logo para iniciar la inspección</p>
 </body>
 </html>
+
 
 
 
